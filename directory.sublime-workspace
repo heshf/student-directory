@@ -1,0 +1,220 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"do",
+				"do"
+			],
+			[
+				"to",
+				"to_eng"
+			],
+			[
+				"all",
+				"all_mp3s"
+			],
+			[
+				"rand",
+				"rand_year"
+			],
+			[
+				"to_",
+				"to_i"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Hesh/Desktop/learn-to-program/chap14/ex3.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap12/Birthdays.txt",
+		"/Users/Hesh/Desktop/learn-to-program/chap09/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap09/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap10/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap10/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap11/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap12/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap12/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap07/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap08/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap08/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap06/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap14/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap13/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap12/ex3.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap11/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap02/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap02/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap02/ex3.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap02/ex4.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap05/ex2.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap05/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap06/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap02/calc.rb",
+		"/Users/Hesh/Desktop/learn-to-program/chap07/ex1.rb",
+		"/Users/Hesh/Desktop/learn-to-program/practiceandnotes.rb",
+		"/Users/Hesh/Desktop/learn-to-program/Pracite and notes/untitled",
+		"/Users/Hesh/Desktop/somedir/somemoretext",
+		"/Users/Hesh/Desktop/somedir/longText.txt",
+		"/Users/Hesh/Desktop/somedir/hello.rb",
+		"/Users/Hesh/Desktop/somedir/There are 10 types of people in this world"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 371.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Ruby/Ruby.sublime-build",
+	"project": "directory.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
