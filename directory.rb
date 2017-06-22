@@ -1,6 +1,24 @@
+def input_students #Creating a method to take users input
+	puts "Please enter the names of the students"
+	puts "To finish, just hit return twice"
+#cerate and empty array
+students = []
+#get the first name
+name = gets.chomp
+#while name isn't empty, repeat the above code
+while !name.empty? do
+	#add the student hash to the array
+	students << {name: name, cohort: :november}
+	puts "Now we have #{students.count} students"
+	#get another name from the user
+	name = gets.chomp
+end
+#return the array of students
+students
+end
 
 #put all students in an array
-students = [
+=begin students = [
 {name: "Dr. Hannibal Lecter", cohort: :november},
 {name: "Darth Vader", cohort: :november},
 {name: "Nurse Ratched", cohort: :november},
@@ -12,7 +30,8 @@ students = [
 {name: "The Joker", cohort: :november},
 {name: "Joffery Baratheon", cohort: :november},
 {name: "Norman Bates", cohort: :november},
-]
+] 
+=end
 
 #and then print them
 def print_header
@@ -30,6 +49,7 @@ def print_footer(names)
 puts "Overall, we have #{names.count} great students"
 end
 
+students = input_students
 print_header
 print(students)
 print_footer(students)
