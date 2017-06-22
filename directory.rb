@@ -41,7 +41,7 @@ end
 
 def print(students)
 students.each.with_index(1) do |student, i|
-	puts "#{i}. #{student[:name]} (#{student[:cohort]} cohort)"
+	puts "#{i}. #{student[:name]} (#{student[:cohort]} cohort)" if student[:name][0].downcase == "f"
 end
 end
 
