@@ -40,8 +40,12 @@ puts "_____________"
 end
 
 def print(students)
-students.each.with_index(1) do |student, i|
-	puts "#{i}. #{student[:name]} (#{student[:cohort]} cohort)" if student[:name][0].downcase == "f" && student[:name].length < 12
+	i = 0
+	while i < students.length do
+#students.each.with_index(1) do |student, i|
+	puts "#{i+1}. #{students[i][:name]} (#{students[i][:cohort]} cohort)" if students[:name][0].downcase == "f" && students[:name].length < 12
+	i += 1
+end
 end
 end
 
@@ -53,3 +57,16 @@ students = input_students
 print_header
 print(students)
 print_footer(students)
+
+
+
+
+
+
+
+
+
+
+
+
+
