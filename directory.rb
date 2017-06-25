@@ -39,15 +39,15 @@ end
 
 #and then print them
 def print_header
-puts "The Students of Villains Academy"
-puts "_____________"
+puts "The Students of Villains Academy".center(50)
+puts "_____________".center(50)
 end
 
 def print(students)
 	i = 0
 	while i < students.length do
 #students.each.with_index(1) do |student, i|
-	puts "#{i+1}. #{students[i][:name]}; #{students[i][:country]}; #{students[i][:hobby]} (#{students[i][:cohort]} cohort)" #if students[:name][0].downcase == "f" && students[:name].length < 12
+	puts "#{i+1}. #{students[i][:name]}; #{students[i][:country]}; #{students[i][:hobby]} (#{students[i][:cohort]} cohort)".center(50) #if students[:name][0].downcase == "f" && students[:name].length < 12
 	i += 1
 end
 end
