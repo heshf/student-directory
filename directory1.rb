@@ -5,14 +5,14 @@ def input_students #Creating a method to take users input
 cohorts = [:January, :February, :March, :April, :May, :June, :July, :August, :September, :October, :November, :December]
 students = []
 #get the first name
-name = gets.chomp
+name = gets.gsub(/\n/,"")
 cohort = nil
 #while name isn't empty, repeat the above code
 while !name.empty? do
    until cohorts.include? cohort do
       default_cohort = :July
        puts "...is in which cohort?"
-      cohort = gets.chomp.capitalize.to_sym
+      cohort = gets.gsub(/\n/,"").capitalize.to_sym
        cohort ||= default_cohort
        puts "Please check your spelling and try again." if !cohorts.include? cohort
      end
@@ -28,7 +28,7 @@ else
 end
 	puts "Add next student or press return to finish:"
 	#get another name from the user
-	name = gets.chomp
+	name = gets.gsub(/\n/,"")
 end
 #return the array of students
 students
