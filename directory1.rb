@@ -1,34 +1,53 @@
-def interactive_menu
-	students = []
-  loop do
-    # 1. print the menu and ask the user what to do
-puts "1. Input the students"
-puts "2. Show the students"
-puts "9. Exit"
-    # 2. read the input and save it into a variable
-selection=gets.chomp
-    # 3. do what the user has asked
+@students = []
+
+def print_menu
+	    # 1. print the menu and ask the user what to do
+puts "______________".center(50)
+puts "1. Input the students".center(50)
+puts "2. Show the students".center(50)
+puts "9. Exit".center(50)
+puts "______________".center(50)
+end
+
+def process(selection)
 case selection
 when "1"
-	students = input_students
+	input_students
 when "2"
-	print_header
-	print(students)
-	print_footer(students)
+	show_students
 when "9"
 	exit
 else
 	puts "I don't know what you mean, please try again"
 	end
+end
+
+
+
+def interactive_menu
+  loop do
+  	print_menu
+  	process(gets.chomp)
   end
 end
+
+def show_students
+	print_header
+	print_students
+	print_footer
+end
+
+    # 2. read the input and save it into a variable
+
+    # 3. do what the user has asked
+
 
 def input_students #Creating a method to take users input
 	puts "Please enter the names of the students"
 	puts "To finish, just hit return twice"
 #create empty array
 cohorts = [:January, :February, :March, :April, :May, :June, :July, :August, :September, :October, :November, :December]
-students = []
+@students = []
 #get the first name
 name = gets.gsub(/\n/,"")
 cohort = nil
@@ -42,21 +61,21 @@ while !name.empty? do
        puts "Please check your spelling and try again." if !cohorts.include? cohort
      end
  
-     students << {name: name, cohort: cohort}
+     @students << {name: name, cohort: cohort}
      cohort = nil
 	#add the student hash to the array
 	#students << {name: name, cohort: :november}
-	if students.count ==1
-	puts "Now we have #{students.count} student"
+	if @students.count ==1
+	puts "Now we have #{@students.count} student"
 else
-		puts "Now we have #{students.count} students"
+		puts "Now we have #{@students.count} students"
 end
 	puts "Add next student or press return to finish:"
 	#get another name from the user
 	name = gets.gsub(/\n/,"")
 end
 #return the array of students
-students
+
 end
 
 #put all students in an array
@@ -81,8 +100,8 @@ puts "The Students of Villains Academy".center(50)
 puts "_________________".center(50)
 end
 
-def print(students)
-students.each.with_index(1) do |student, i|
+def print_students
+@students.each.with_index(1) do |student, i|
 	
 	puts "#{i}. #{student[:name]} (#{student[:cohort]} cohort)".center(50)
 
@@ -91,11 +110,11 @@ end
 end
 
 
-def print_footer(names)
-	if names.count == 1
-puts "Overall, we have #{names.count} great student"
+def print_footer
+	if @students.count == 1
+puts "Overall, we have #{@students.count} great student".center(50)
 else
-	puts "Overall, we have #{names.count} great students"
+	puts "Overall, we have #{@students.count} great students".center(50)
 end
 end
 
@@ -106,6 +125,4 @@ interactive_menu
 #print(students)
 #print_footer(students)
 #else puts "The student directory is empty"
-#	end
-
-
+#end
