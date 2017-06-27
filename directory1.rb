@@ -58,9 +58,13 @@ end
 
 def print(students)
 students.each.with_index(1) do |student, i|
+	
 	puts "#{i}. #{student[:name]} (#{student[:cohort]} cohort)".center(50)
+
+
 end
 end
+
 
 def print_footer(names)
 	if names.count == 1
@@ -71,6 +75,9 @@ end
 end
 
 students = input_students
+if students.count >= 1
 print_header
 print(students)
 print_footer(students)
+else puts "The student directory is empty"
+	end
