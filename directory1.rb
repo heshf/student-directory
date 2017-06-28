@@ -2,12 +2,13 @@
 
 def print_menu
 	    # 1. print the menu and ask the user what to do
-puts "______________".center(50)
+puts "--------------".center(50)
 puts "1. Input the students".center(50)
 puts "2. Show the students".center(50)
 puts "3. Save the list to students.csv".center(50)
+puts "4. Load the list from students.csv".center(50)
 puts "9. Exit".center(50)
-puts "______________".center(50)
+puts "--------------".center(50)
 end
 
 def process(selection)
@@ -18,6 +19,8 @@ when "2"
 	show_students
 when "3"
 	save_students
+when "4"
+	load_students
 when "9"
 	exit
 else
@@ -38,6 +41,15 @@ def show_students
 	print_header
 	print_students
 	print_footer
+end
+
+def load_students
+  file = File.open("students.csv", "r")
+  file.readlines.each do |line|
+  name, cohort = line.chomp.split(',')
+    @students << {name: name, cohort: cohort.to_sym}
+  end
+  file.close
 end
 
 def save_students
